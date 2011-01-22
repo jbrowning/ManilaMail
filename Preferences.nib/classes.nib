@@ -1,0 +1,36 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                checkForNewMessages = id; 
+                composeMessage = id; 
+                openInbox = id; 
+                showPreferencePanel = id; 
+            }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {appMenu = NSMenu; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                changeCheckInterval = id; 
+                changeCountInboxOrAll = id; 
+                changeLaunchMailOnCount = id; 
+                changeOpenOnLogin = id; 
+                showWindow = id; 
+            }; 
+            CLASS = PreferenceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                countInboxOrAll = NSMatrix; 
+                intervalSecondsTextField = NSTextField; 
+                launchMailOnCountCheckbox = NSButton; 
+                openOnLoginCheckbox = NSButton; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}
